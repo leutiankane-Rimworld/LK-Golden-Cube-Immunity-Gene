@@ -1,0 +1,20 @@
+<Defs> 
+  <GeneDef>
+    <defName>LK_GoldenCube_Immune</defName>
+    <label>Cube Immune</label>
+    <labelShortAdj>grav-master</labelShortAdj>
+    <description>Carriers of this gene are immune to the effects of the golden cube. </description>
+    <iconPath>UI/Icons/Genes/Gene_GCImmune</iconPath>
+    <displayOrderInCategory>20</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>Golden Cube Immunity</li> 
+    </customEffectDescriptions>
+    <hediffGiversCannotGive>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CubeInterest</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CubeWithdrawal</li>
+    </hediffGiversCannotGive>
+    <!--Complexity etc-->
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+  </GeneDef>
+</Defs>
