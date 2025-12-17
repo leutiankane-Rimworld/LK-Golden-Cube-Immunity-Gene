@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Childhood Traits -->
+
+  
+  
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>Evolved Humanoid Child</title>
+    <defName>LKHP_BaseChild</defName>
+    <titleShort>Evolved Human Child</titleShort>
+    <baseDesc>[PAWN_nameDef] was born into a common family on a world with a huge focus on genetic manipulation and engineering. [PAWN_pronoun] has many generations of genetic engineering that had been inherited from previous generations preparing them for life on the rim.</baseDesc>
+    <spawnCategories>
+      <li>EvolvedHumanoidChildBackstories</li>
+    </spawnCategories>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	    <Melee>1</Melee>
+	    <Plants>2</Plants>
+	    <Animals>2</Animals>
+	    <Intellectual>2</Intellectual>
+	    <Medicine>2</Medicine>
+    </skillGains>
+  </BackstoryDef>  
+
+  <BackstoryDef>
+    <slot>Childhood</slot>
+    <title>Evolved Humanoid Indigent</title>
+    <defName>LKHP_EvilChild</defName>
+    <titleShort>Evolved Human Indigent</titleShort>
+    <baseDesc>[PAWN_nameDef] was born into a poor family on a world with a huge focus on genetic manipulation and engineering. [PAWN_pronoun] has many generations of genetic engineering that had been inherited from previous generations preparing them for revenge on the rim.</baseDesc>
+    <spawnCategories>
+      <li>EvolvedHumanoidEvilChildBackstories</li>
+    </spawnCategories>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+	    <Melee>1</Melee>
+	    <Plants>2</Plants>
+	    <Animals>2</Animals>
+	    <Intellectual>2</Intellectual>
+	    <Medicine>2</Medicine>
+    </skillGains>
+  </BackstoryDef>  
+
+<!-- Adulthood Traits -->
+
+  <BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Evolved Humanoid Colonist</title>
+    <defName>LKHP_BaseAdult</defName>
+    <titleShort>Evolved Human Colonist</titleShort>
+    <baseDesc>[PAWN_nameDef] was conscripted into the exploration core on their homeworld to boldy explore worlds on the rim. [PAWN_pronoun] has explored several hostile rimworlds and is somehow miraculously still alive.</baseDesc>
+    <spawnCategories>
+      <li>EvolvedHumanoidBackstories</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Shooting>4</Shooting>
+      <Melee>3</Melee>
+      <Mining>2</Mining>
+    </skillGains>
+    <disallowedTraits>
+      <Greedy />
+	  <Wimp />
+	  <Gourmand />
+    </disallowedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+
+<BackstoryDef>
+    <slot>Adulthood</slot>
+    <title>Evolved Humanoid Militia</title>
+    <defName>LKHP_EvilAdult</defName>
+    <titleShort>Evolved Human Militia</titleShort>
+    <baseDesc>[PAWN_nameDef] was exiled into slave ship existence from their homeworld to supply slave labor to worlds on the rim. [PAWN_pronoun] was enslaved to  several hostile factions across the rim and is somehow miraculously still alive. [PAWN_pronoun] has now joined the Militia's resistance to seek revenge.</baseDesc>
+    <spawnCategories>
+      <li>EvolvedHumanoidEvilBackstories</li>
+    </spawnCategories>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <workDisables>
+      <li>None</li>
+    </workDisables>
+    <skillGains>
+      <Shooting>4</Shooting>
+      <Melee>3</Melee>
+      <Mining>2</Mining>
+    </skillGains>
+    <disallowedTraits>
+      <Greedy />
+	  <Wimp />
+	  <Gourmand />
+    </disallowedTraits>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+  </BackstoryDef>
+  
+   
+</Defs>

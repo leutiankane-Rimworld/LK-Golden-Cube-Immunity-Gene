@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Anti Cubist-->
+
+  <XenotypeDef>
+    <defName>LK_GCImmune</defName>
+    <label>anti cubist</label>
+    <description>Horax cultist deserters, this group of people have developed an immunity to the machinations of the golden cube.</description>
+    <descriptionShort>Horax cultist deserters, this group of people have developed an immunity to the machinations of the golden cube.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <combatPowerFactor>2.5</combatPowerFactor>
+    <displayPriority>-1000</displayPriority>
+    <factionlessGenerationWeight>.08</factionlessGenerationWeight>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>LK_GoldenCube_Immune</li>
+      
+    </genes>
+  </XenotypeDef>
+<!--Evolved Human Leaders-->
+ <!--<XenotypeDef>
+    <defName>LKHumanPlusBoss</defName>
+    <label>Evolved Human Leader</label>
+    <description>Evolved Humans are a type of archotech-enhanced xenohuman. Powered by archites, their abilities go far beyond normal genetic enhancements. They are mentally adept and preternaturally beautiful.</description>
+    <descriptionShort>Evolved Humans are ageless, deathless super-humans powered by archotech-created archites in the bloodstream. They are beautiful and extremely intelligent. They can heal any injury, and never suffer from disease or poison.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+    <generateWithXenogermReplicatingHediffChance>0.0</generateWithXenogermReplicatingHediffChance>
+    <xenogermReplicatingDurationLeftDaysRange>0.0~0</xenogermReplicatingDurationLeftDaysRange>
+    <combatPowerFactor>4.0</combatPowerFactor>
+    <displayPriority>-1000</displayPriority>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>LK_VOIDGene</li>
+      <li MayRequire="bardez.genetics.archotechstack">ArchostackGene</li>
+    </genes>
+  </XenotypeDef>-->
+  <!--Evolved Human Sleeve-->
+  <!--<XenotypeDef>
+    <defName>LKHumanPlusSleeve</defName>
+    <label>Evolved Human Sleeve</label>
+    <description>Evolved Humans sleeves are sleeves created using the genes from the evolved humanoid race.</description>
+    <descriptionShort>Evolved Humans sleeves are sleeves created using the genes from the evolved humanoid race.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Sanguophage</iconPath>
+    <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+    <generateWithXenogermReplicatingHediffChance>0.01</generateWithXenogermReplicatingHediffChance>
+    <xenogermReplicatingDurationLeftDaysRange>0.01~1</xenogermReplicatingDurationLeftDaysRange>
+    <combatPowerFactor>2.5</combatPowerFactor>
+    <displayPriority>-1000</displayPriority>
+    <factionlessGenerationWeight>.01</factionlessGenerationWeight>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Deathless</li>
+      <li>PsychicAbility_Extreme</li>
+      <li>LK_Gravity_Master</li>
+      <li>LK_Evolved_Master_Gene</li>
+    </genes>
+  </XenotypeDef>-->
+</Defs>

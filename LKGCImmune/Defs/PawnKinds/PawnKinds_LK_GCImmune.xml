@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--Bases-->
+	<PawnKindDef Name="BaseLK_GCImmunePawn" Abstract="True">
+		<race>Human</race>
+		<minGenerationAge>20</minGenerationAge>
+		<defaultFactionType>LK_GCImmune</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<invNutrition>2.55</invNutrition>
+		<xenotypeSet>
+		<xenotypeChances>
+        <LKHumanPlus MayRequire="Ludeon.RimWorld.Biotech">999.0</LKHumanPlus>
+		</xenotypeChances>
+		</xenotypeSet>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>3</countRange>
+				</li>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>10~300</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<apparelMoney>
+			<min>12000</min>
+			<max>30000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+	  <li>SpacerMilitary</li>
+	  
+		</apparelTags>
+		<specificApparelRequirements Inherit="False">
+            <li>
+	            <requiredTag>IndustrialBasic</requiredTag>		
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+            <li>
+			    <requiredTag>IndustrialBasic</requiredTag>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+        </specificApparelRequirements>
+		<weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
+      <li>SniperRifle</li>
+	  
+	  </weaponTags>
+		<weaponMoney>
+			<min>6000</min>
+			<max>30000</max>
+		</weaponMoney>
+		<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~10</range>
+      </li>
+	  <li>
+        <skill>Medicine</skill>
+        <range>6~10</range>
+      </li>
+    </skills>
+	<initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <useFactionXenotypes>true</useFactionXenotypes>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>30000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+		<li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+		<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef Name="BaseLK_GCImmuneMeleePawn" Abstract="True">
+		<race>Human</race>
+		<minGenerationAge>20</minGenerationAge>
+		<defaultFactionType>LK_GCImmune</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<invNutrition>2.55</invNutrition>
+		<xenotypeSet>
+		<xenotypeChances>
+        <LKHumanPlus MayRequire="Ludeon.RimWorld.Biotech">999.0</LKHumanPlus>
+		</xenotypeChances>
+		</xenotypeSet>
+		<inventoryOptions>
+			<skipChance>0.1</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>3</countRange>
+				</li>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>10~300</countRange>
+				</li>
+			</subOptionsTakeAll>
+		</inventoryOptions>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<isFighter>true</isFighter>
+		<apparelMoney>
+			<min>12000</min>
+			<max>30000</max>
+		</apparelMoney>
+		<apparelTags>
+	 <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>Apparel_ShieldBelt</li>
+			
+	  </apparelTags>
+		<specificApparelRequirements Inherit="False">
+            <li>
+	            <requiredTag>IndustrialBasic</requiredTag>		
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+            <li>
+			    <requiredTag>IndustrialBasic</requiredTag>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+        </specificApparelRequirements>
+		<weaponTags>
+      <li>UltratechMelee</li>
+      <li>MedievalMeleeAdvanced</li>
+	 
+	  </weaponTags>
+		<weaponMoney>
+			<min>6000</min>
+			<max>30000</max>
+		</weaponMoney>
+		<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>18~20</range>
+      </li>
+	  <li>
+        <skill>Shooting</skill>
+        <range>18~20</range>
+      </li>
+	  <li>
+        <skill>Medicine</skill>
+        <range>18~20</range>
+      </li>
+    </skills>
+	<initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <useFactionXenotypes>true</useFactionXenotypes>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>30000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+		<li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+		<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+	<!--Boss Pawn for Faction Bases-->
+	<PawnKindDef Name="BaseLK_GCImmuneBossPawn" Abstract="True">
+		<race>Human</race>
+		<minGenerationAge>20</minGenerationAge>
+		<defaultFactionType>LK_GCImmune</defaultFactionType>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
+		<invNutrition>2.55</invNutrition>
+		<xenotypeSet>
+		<xenotypeChances>
+        <LKHumanPlusBoss MayRequire="Ludeon.RimWorld.Biotech">999.0</LKHumanPlusBoss>
+		</xenotypeChances>
+		</xenotypeSet>
+		<inventoryOptions>
+			<skipChance>0</skipChance>
+			<subOptionsTakeAll>
+				<li>
+					<thingDef>MedicineUltratech</thingDef>
+					<countRange>3</countRange>
+				</li>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>10~300</countRange>
+				</li>
+			</subOptionsTakeAll>
+			
+		</inventoryOptions>
+		<gearHealthRange>1~1</gearHealthRange>
+		<itemQuality>Legendary</itemQuality>
+		<isFighter>true</isFighter>
+		<apparelMoney>
+			<min>12000</min>
+			<max>30000</max>
+		</apparelMoney>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+	  <li>SpacerMilitary</li>
+	  
+		</apparelTags>
+		<specificApparelRequirements Inherit="False">
+            <li>
+	            <requiredTag>IndustrialBasic</requiredTag>		
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+            <li>
+			    <requiredTag>IndustrialBasic</requiredTag>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+                <stuff>Synthread</stuff>
+            </li>
+        </specificApparelRequirements>
+		<weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
+      <li>SniperRifle</li>
+	  
+	  </weaponTags>
+		<weaponMoney>
+			<min>6000</min>
+			<max>30000</max>
+		</weaponMoney>
+		<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~10</range>
+      </li>
+	  <li>
+        <skill>Medicine</skill>
+        <range>6~10</range>
+      </li>
+    </skills>
+	<initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <useFactionXenotypes>false</useFactionXenotypes>
+		<techHediffsMoney>
+			<min>12000</min>
+			<max>30000</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+		<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsChance>0.1</techHediffsChance>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~20</initialResistanceRange>
+	</PawnKindDef>
+<!--Pawnkinds-->
+	<PawnKindDef ParentName="BaseLK_GCImmunePawn">
+		<defName>LK_GCImmune_Citizen</defName>
+		<label>anti cubist citizen</label>
+		<weaponTags>
+	  <li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
+      <li>SniperRifle</li>
+	  
+		</weaponTags>
+		<combatPower>240</combatPower>
+		<apparelTags>
+	  
+	  </apparelTags>
+	</PawnKindDef>
+    <PawnKindDef ParentName="BaseLK_GCImmunePawn">
+		<defName>LK_GCImmune_Trooper</defName>
+		<label>anti cubist trooper</label>
+		<weaponTags>
+	  <li>SpacerGun</li>
+      <li>SpacerGun</li>
+      <li>SniperRifle</li>
+	  
+		</weaponTags>
+		<combatPower>240</combatPower>
+		<apparelTags>
+		    <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			
+		</apparelTags>
+		<apparelRequired>
+      
+        </apparelRequired>
+		<disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseLK_GCImmuneMeleePawn">
+		<defName>LK_GCImmune_Trooper_Melee</defName>
+		<label>anti cubist trooper</label>
+		<weaponTags>
+	  <li>UltratechMelee</li>
+      <li>MedievalMeleeAdvanced</li>
+	  
+		</weaponTags>
+		<combatPower>240</combatPower>
+		<apparelTags>
+		    <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			<li>Apparel_ShieldBelt</li>
+			
+		</apparelTags>
+		<skills>
+      <li>
+        <skill>Melee</skill>
+        <range>6~12</range>
+      </li>
+	  </skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseLK_GCImmunePawn">
+		<defName>LK_GCImmune_Officer</defName>
+		<label>anti cubist officer</label>
+		<apparelTags>
+		    <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			
+		</apparelTags>
+		<combatPower>300</combatPower>
+		<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~12</range>
+      </li>
+	  <li>
+        <skill>Social</skill>
+        <range>15~20</range>
+      </li>
+	  </skills>
+	  <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+	</PawnKindDef>
+
+	
+
+	<PawnKindDef ParentName="BaseLK_GCImmunePawn">
+		<defName>LK_GCImmune_Trader</defName>
+		<label>anti cubist trader</label>
+		<trader>true</trader>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
+      <li>SniperRifle</li>
+	  
+		</weaponTags>
+		<apparelTags>
+		    <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			
+		</apparelTags>
+		<combatPower>250</combatPower>
+		<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~12</range>
+      </li>
+	  <li>
+        <skill>Social</skill>
+        <range>15~20</range>
+      </li>
+	  </skills>
+	  <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BaseLK_GCImmunePawn">
+		<defName>LK_GCImmune_Leader</defName>
+		<label>patrol leader</label>
+		<labelPlural>patrol leaders</labelPlural>
+		<weaponTags>
+			 <li>SpacerGun</li>
+			 
+			 <li>UltratechMelee</li>
+      <li>MedievalMeleeAdvanced</li>
+	  
+		</weaponTags>
+		<apparelTags>
+		    <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			
+			<li>Apparel_ShieldBelt</li>
+			
+		</apparelTags>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <color>(68,68,68)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Hyperweave</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Hyperweave</stuff>
+      </li>
+    </specificApparelRequirements>
+	
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+      <li>ImplantEmpireRoyal</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <techHediffsRequired>
+      <li>BionicEye</li>
+      <li>BionicEye</li>
+      <li>StoneskinGland</li>
+    </techHediffsRequired>
+    <disallowedTraits>
+      <li>Wimp</li>
+      <li>Nudist</li>
+      <li>BodyPurist</li>
+	  <li>Brawler</li>
+    </disallowedTraits>
+		<combatPower>350</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		 <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Social</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Medicine</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+	</PawnKindDef>
+
+	<!--<PawnKindDef ParentName="BaseLK_GCImmuneBossPawn">
+		<defName>LK_HumanPlus_Boss</defName>
+		<label>Archon</label>
+		<labelPlural>Archons</labelPlural>
+		<weaponTags>
+			 <li>SpacerGun</li>
+			 <li>UltratechMelee</li>
+      <li>MedievalMeleeAdvanced</li>
+	  
+		</weaponTags>
+		<apparelTags>
+		    <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			
+			<li>Apparel_ShieldBelt</li>
+			
+		</apparelTags>
+    <specificApparelRequirements Inherit="False">
+      <li>
+        <bodyPartGroup>FullHead</bodyPartGroup>
+        <color>(68,68,68)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Hyperweave</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Hyperweave</stuff>
+      </li>
+    </specificApparelRequirements>
+	
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+      <li>ImplantEmpireRoyal</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <techHediffsRequired>
+      <li>BionicEye</li>
+      <li>BionicEye</li>
+      <li>StoneskinGland</li>
+    </techHediffsRequired>
+    <disallowedTraits>
+      <li>Wimp</li>
+      <li>Nudist</li>
+      <li>BodyPurist</li>
+	  <li>Brawler</li>
+    </disallowedTraits>
+		<combatPower>550</combatPower>
+		<minGenerationAge>30</minGenerationAge>
+		 <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Social</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Medicine</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+	</PawnKindDef>-->
+
+	<!--TestFactionLeader-->
+	<PawnKindDef ParentName="BaseLK_GCImmunePawn">
+    <defName>LK_GCImmune_Royal_Stellarch</defName>
+    <label>anti cubist priest</label>
+    <factionLeader>true</factionLeader>
+    <combatPower>535</combatPower>
+	<weaponTags>
+			 <li>SpacerGun</li>
+			 
+			 <li>UltratechMelee</li>
+             <li>MedievalMeleeAdvanced</li>
+	         
+	</weaponTags>
+	<apparelTags>
+		    <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryAdvanced</li>
+			<li>SpacerMilitary</li>
+			
+			<li>Apparel_ShieldBelt</li>
+			
+	</apparelTags>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Hyperweave</stuff>
+        <color>(95, 20, 133)</color>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <apparelLayer>OnSkin</apparelLayer>
+        <stuff>Hyperweave</stuff>
+      </li>
+    </specificApparelRequirements>
+	
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+      <li>ImplantEmpireRoyal</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <techHediffsRequired>
+      <li>BionicEye</li>
+      <li>BionicEye</li>
+      <li>StoneskinGland</li>
+    </techHediffsRequired>
+    <initialWillRange>16~19</initialWillRange>
+    <initialResistanceRange>38~58</initialResistanceRange>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <LKHumanPlusBoss MayRequire="Ludeon.RimWorld.Biotech">999</LKHumanPlusBoss>
+      </xenotypeChances>
+    </xenotypeSet>
+	<skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Social</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Melee</skill>
+        <range>15~20</range>
+      </li>
+	  <li>
+        <skill>Medicine</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+</Defs>
