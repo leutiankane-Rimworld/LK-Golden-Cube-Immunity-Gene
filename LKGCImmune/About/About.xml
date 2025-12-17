@@ -7,7 +7,7 @@
         <li>1.6</li>
     </supportedVersions>
     <packageId>LeutianKane.GCImmune</packageId>
-    <description>Adds Golden Cube Immunity Gene carriers are immune to effects of the golden cube. Also adds Hostile faction to the map so you can recruit gene carriers.</description>
+    <description>Adds Golden Cube Immunity Gene, carriers are immune to effects of the golden cube. Also adds Hostile faction to the map so you can recruit gene carriers.</description>
     <modDependencies>
 <li>
     <packageId>Ludeon.RimWorld.Biotech</packageId>
@@ -35,3 +35,4 @@
 </loadAfter>
 
 </ModMetaData>
+
