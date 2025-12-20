@@ -38,6 +38,13 @@
 		<baseTraderKinds>
 			<li>Orbital_BulkGoods</li>
 		</baseTraderKinds>
+		<backstoryFilters>
+      <li>
+        <categories>
+          <li>Cult</li>
+        </categories>
+      </li>
+    </backstoryFilters>
 		<allowedArrivalTemperatureRange>
 		  <min>-1000</min>
 		  <max>1000</max>
@@ -284,4 +291,5 @@
 		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
 		<configurationListOrderPriority>30</configurationListOrderPriority>
 	</FactionDef>-->
+
 </Defs>
